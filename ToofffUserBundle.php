@@ -1,6 +1,6 @@
 <?php
 
-namespace ToofffUserBundle;
+namespace Toofff\UserBundle;
 
 use Symfony\Component\HttpKernel\Bundle\Bundle;
 
