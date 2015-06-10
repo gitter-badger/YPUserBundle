@@ -4,6 +4,9 @@ namespace ToofffUserBundle;
 
 use Symfony\Component\HttpKernel\Bundle\Bundle;
 
-class AppBundle extends Bundle
+/**
+ * @author Prou Yann <prouyann@gmail.com>
+ */
+class ToofffUserBundle extends Bundle
 {
 }
