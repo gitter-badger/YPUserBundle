@@ -2,12 +2,12 @@
 
 namespace YP\UserBundle\DependencyInjection;
 
-use Symfony\Bundle\FrameworkBundle\DependencyInjection\Configuration;
 use Symfony\Component\Config\Definition\Processor;
 use Symfony\Component\Config\FileLocator;
 use Symfony\Component\HttpKernel\DependencyInjection\Extension;
 use Symfony\Component\DependencyInjection\ContainerBuilder;
 use Symfony\Component\DependencyInjection\Loader\XmlFileLoader;
+use YP\UserBundle\DependencyInjection\Configuration;
 
 /**
  * @author Prou Yann <prouyann@gmail.com>
@@ -29,8 +29,12 @@ class YPUserExtension extends Extension
         //     $loader->load(sprintf('%s.xml', $basename));
         // }
 
+        echo '<pre>';
+        print_r($configs);
+        echo '</pre>';
+
         $processor = new Processor();
-        $configuration = new Configuration(false);
+        $configuration = new Configuration();
         $config = $processor->processConfiguration($configuration, $configs);
     }
 

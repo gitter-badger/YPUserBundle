@@ -8,8 +8,13 @@ use Symfony\Component\Config\Definition\ConfigurationInterface;
 /**
  * @author Prou Yann <prouyann@gmail.com>
  */
-class Configuration extends ConfigurationInterface
+class Configuration implements ConfigurationInterface
 {
+    /**
+     * Generate configuration.
+     *
+     * @return TreeBuilder
+     */
     public function getConfigTreeBuilder()
     {
         $treeBuilder = new TreeBuilder();
@@ -17,7 +22,7 @@ class Configuration extends ConfigurationInterface
 
         $rootNode
             ->children()
-                ->scalarNode('firewall')->isRequired()->cannotBeEmpty()->end()
+                ->scalarNode('firewall_name')->isRequired()->cannotBeEmpty()->end()
             ->end()
         ;
 

@@ -19,6 +19,11 @@ class ConfigurationTest extends \PHPUnit_Framework_TestCase
     public function testDefaultConfig()
     {
         $processor = new Processor();
-        $config = $processor->processConfiguration(new Configuration(true), array(array('firewall' => 'administration')));
+        $config = $processor->processConfiguration(new Configuration(true), $this->getConfigs());
+    }
+
+    private function getConfigs()
+    {
+        return array(array('firewall_name' => 'administration'));
     }
 }
