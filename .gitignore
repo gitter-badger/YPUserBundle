@@ -1,0 +1,11 @@
+# Symfony directories
+vendor/*
+
+# Phpunit
+coverage/*
+phpunit.xml
+
+# Composer
+composer.lock
+
+!.gitkeep
