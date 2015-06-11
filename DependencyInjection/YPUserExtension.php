@@ -1,6 +1,6 @@
 <?php
 
-namespace Toofff\UserBundle\DependencyInjection;
+namespace YP\UserBundle\DependencyInjection;
 
 use Symfony\Bundle\FrameworkBundle\DependencyInjection\Configuration;
 use Symfony\Component\Config\Definition\Processor;
@@ -12,7 +12,7 @@ use Symfony\Component\DependencyInjection\Loader\XmlFileLoader;
 /**
  * @author Prou Yann <prouyann@gmail.com>
  */
-class ToofffUserExtension extends Extension
+class YPUserExtension extends Extension
 {
     /**
      * Responds to the app.config configuration parameter.

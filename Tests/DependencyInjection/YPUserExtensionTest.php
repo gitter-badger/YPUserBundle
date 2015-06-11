@@ -1,15 +1,15 @@
 <?php
 
-namespace Toofff\UserBundle\Tests\DependencyInjection;
+namespace YP\UserBundle\Tests\DependencyInjection;
 
 use Symfony\Component\DependencyInjection\ContainerBuilder;
 use Symfony\Component\DependencyInjection\Reference;
 use Symfony\Component\Yaml\Parser;
-use Toofff\UserBundle\DependencyInjection\FOSUserExtension;
+use YP\UserBundle\DependencyInjection\YPUserExtension;
 
 /**
  * @author Prou Yann <prouyann@gmail.com>
  */
-class ToofffUserExtensionTest extends \PHPUnit_Framework_TestCase
+class YPUserExtensionTest extends \PHPUnit_Framework_TestCase
 {
 }
