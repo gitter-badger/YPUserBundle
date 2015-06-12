@@ -1,8 +1,10 @@
 # ROADMAP
 
 ## Version 0.1.0
-- Create entity user & repository
-  * create canonicalizer
+- Create entity user
+  * Create canonicalizer
+  * Create "UserRepository"
+  * Create "UserManager"
   * Create generator token
 - Form "Authentification"
 - Form "Authentification" with remember me
