@@ -29,10 +29,6 @@ class YPUserExtension extends Extension
         //     $loader->load(sprintf('%s.xml', $basename));
         // }
 
-        echo '<pre>';
-        print_r($configs);
-        echo '</pre>';
-
         $processor = new Processor();
         $configuration = new Configuration();
         $config = $processor->processConfiguration($configuration, $configs);
